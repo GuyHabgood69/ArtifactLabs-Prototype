@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtifactLabs | Fractional CTO & Product Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Playfair+Display:ital,wght@1,500&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --c-bg-outer: #8A9691; 
+            --c-bg-main: #DCE3DF; 
+            --c-bg-card: #CBD3CF; 
+            --c-text-main: #0F1210; 
+            --c-text-muted: #5C6360;
+            --c-accent-line: #0F1210;
+            --c-cta: #FF1F1F;
+            --f-sans: 'Inter', sans-serif;
+            --f-serif: 'Playfair Display', serif;
+            --f-mono: 'JetBrains Mono', monospace;
+        }
+
+        body {
+            background-color: var(--c-bg-outer);
+            color: var(--c-text-main);
+            font-family: var(--f-sans);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .mix-serif {
+            font-family: var(--f-serif);
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(15, 18, 16, 0.1);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(15, 18, 16, 0.2);
+        }
+
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 20s linear infinite;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
